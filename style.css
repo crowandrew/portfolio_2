@@ -96,3 +96,45 @@ h2 {
     font-size: 1.5em;
     color: lightgray;
 }
+
+
+
+.button-sm {
+    background-color:white;
+    border: none;
+    color: gray;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 1s;
+    font-size: 1em;
+}
+
+button:hover {
+    color: black;
+    background-color: cornflowerblue;
+
+}
+
+.button-lg {
+    background-color: cornflowerblue;
+    border: none;
+    color: black;
+    padding: 18px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 1s;
+    font-size: 1em;
+}
+
+.p-trait {
+    margin-top: 8vh;
+}
