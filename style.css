@@ -18,7 +18,7 @@ nav {
   }
 
 .logo {
-    background-color:
+    background-color:transparent;
 }
 
 .navigation {
@@ -33,7 +33,6 @@ main {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
-    
 }
 
 .content {
@@ -41,7 +40,9 @@ main {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    
+    text-align: center;
+    margin: auto;
+   
 }
 
 .hero {
@@ -66,14 +67,28 @@ footer {
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
-    background-color: black; 
+    text-align: center; 
+    color: lightgrey;
 }
 
 .hero_circle {
-    height: 280px;
-    width: 280px;
+    height: 400px;
+    width: 400px;
     background-color: cornflowerblue;
     border-radius: 50%;
     display: inline-block;
-    text-align: center;
+    text-align: right;
   }
+
+.hero_img {
+    width: auto;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+    color: lightgray;
+}
