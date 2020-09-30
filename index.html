@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/c81283c87d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="./images/logo-andrew.png" alt="Andrew Crow Logo">
+                <a href="./index.html"><img src="./images/logo-andrew.png" alt="Andrew Crow Logo"></a>
             </div>
             <div class="navigation">
-                <button class="button-sm">Portfolio</button>
-                <button class="button-sm">About</button>
-                <button class="button-sm">Resume</button>
-                <button class="button-sm">Contact</button>
+                <button class="button-sm" id="about-btn">About</button>
+                <button class="button-sm" id="resume-btn">Resume</button>
+                <button class="button-sm" id="contact-btn-1">Contact</button>
+                <button class="button-md" id="portfolio-btn" data-index="1">Portfolio</button>
             </div>
         </nav>
     </header>
@@ -35,17 +37,134 @@
                 <img src="./images/andrew_crow_2x-removebg-preview.png" alt="photo of Andrew Crow" id="hero_img">
             </span>
         </section>
-        <section class="content">
+        <section class="content" id="hello">
             <h1>Hello - I'm Andrew Crow</h1>
             <h2>A Full-Stack Web Developer</h2>
-            <button class="button-lg">Contact Me</button>
+            <button class="button-lg" id="contact-btn-2">Contact Me</button>
+        </section>
+        <section class="content" id="contact-me">
+            <h1>Contact Me</h1>
+            <form>
+                <label for="inputName">Your Name</label>
+                <input type="text" id="inputName" placeholder="Name">
+                <label for="inputEmail">Your Email</label>
+                <input type="email" id="inputEmail" placeholder="Email">
+                <label for="inputSubject">Subject</label>
+                <input id="inputSubject" placeholder="Subject"></input>
+                <label for="inputMessage">Message</label>
+                <textarea id="inputMessage" rows="6" placeholder="Message"></textarea>
+                <button class="button-md" type="submit">Send</button>
+            </form>
+            <div id="divContact">
+                <div>
+                    <a href="https://www.google.com/maps/place/Modesto,+CA+95355" target="_blank">
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/crow-andrew/" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/crowandrew" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/CrowCodes" target="_blank">
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://andrewcrow.com" target="_blank">
+                        <i class="fas fa-external-link-square-alt fa-2x"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:andrew@crow.me" target="_blank">
+                        <i class="fas fa-envelope-open-text fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="about-me">
+            <h1>About Me</h1>
+            <p>I have had a passion for technology since I was a little boy since my uncle showed me his Apple
+                Macintosh, I wasn’t sure what it did, but it was love at first sight. My journey continued throughout my
+                youth of building PCs, burning bootleg CDs full of MP3s for friends, and dreaming of the future. </p>
+            <p>When I turned 16 a friend of mine had a great idea that we should start our own ISP (Internet Service
+                Provider), so we set out to start our own business. We convinced a local computer repair store to use
+                their upstairs storage area and an investor to pay for the equipment. In a few months, we launched
+                Eze-inter.net, and had a blast doing it. As you can expect at 16 I didn’t have any knowledge of
+                contracts or business ownership I was just passionate to build something with technology. The investor
+                in the end sold the business as soon as he could make a profit. This passion and drive continued through
+                multiple roles in tech from a network administrator to a computer teacher at an elementary school.</p>
+            <p>However, unforeseen financial hardship arising from an accident while moving drove me to pursue quick
+                money. I moonlighted selling car parts for a large aftermarket car parts supplier and found that I could
+                pay my medical debt faster. This drove me into the sales world where I have been for the last 15 years.
+                Each successful role after role as I moved up the leadership hierarchy didn’t fulfill this need for
+                building something with technology, so after a long discussion with my wife. Basically her telling me
+                100 times that I should just quit my job and do something else. I left my role as Director of Sales in
+                July 2020 in the middle of a pandemic.</p>
+            <p>I decided to join a Full Stack Developer Bootcamp and start building amazing things. I’m passionate about
+                coding, but also love to hike, backpack, travel, and cook, so if you are into these things too feel free
+                to reach out. I hope our paths cross at some point in a meaningful way.</p>
+
         </section>
     </main>
-    <footer>
-        <p>Copyright 2020 Andrew Crow</p>
-    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./script.js"></script>
+
+    <div id="portfolio_3">
+    </div>
+    <div id="portfolio_4">
+    </div>
+    <div id="portfolio_5">
+    </div>
+    <div id="portfolio_6">
+    </div>
+    <div id="portfolio_7">
+        <div class="learnMore" id="info-7"></div>
+            <h2>Work Day Scheduler
+                <a href="https://github.com/crowandrew/work_day_scheduler" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://crowandrew.github.io/work_day_scheduler/" target="_blank">
+                    <i class="fas fa-external-link-square-alt fa-2x"></i>
+                </a>
+            </h2>
+
+
+            <p>This is a simple calendar application that allows the user to save events for each hour of the day. This
+                app runs in the browser and features dynamically updated HTML and CSS powered by jQuery</p>
+        </div>
+        <iframe src="https://crowandrew.github.io/work_day_scheduler/" scrolling="yes" width="100%"
+            allowfullscreen id="iframe-7"></iframe>
+    </div>
+    <div id="portfolio_8">
+        <div class="learnMore">
+            <h3>Weather Dashboard
+                <a href="https://github.com/crowandrew/work_day_scheduler" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://crowandrew.github.io/work_day_scheduler/" target="_blank">
+                    <i class="fas fa-external-link-square-alt fa-2x"></i>
+                </a>
+            </h3>
+            <p>This is a simple calendar application that allows the user to save events for each hour of the day. This
+                app runs in the browser and features dynamically updated HTML and CSS powered by jQuery</p>
+        </div>
+        <iframe src="https://crowandrew.github.io/weather_dashboard/" scrolling="yes" height=100% width="100%"
+            allowfullscreen></iframe>
+    </div>
+    <div id="portfolio_9">
+        <div class="learnMore">
+            <h3>moodSing <i class="fas fa-angle-down"></i></h3>
+        </div>
+        <iframe src="https://mrjcowman.github.io/moodSing/" scrolling="yes" height="100%" width="100%"
+            allowfullscreen></iframe>
+    </div>
 </body>
 
 </html>
